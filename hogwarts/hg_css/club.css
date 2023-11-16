@@ -1,0 +1,472 @@
+/* 필수 css Header+Footer+mid 크기 */
+@font-face {
+    font-family: 'HarryPoterFont';
+    src: url('../font/HarryPoter-na_lover.ttf') format('truetype');
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+#homeLogo{
+    width: 80px;
+    height: 100px;
+    margin: 0px 5px 0px 30px;
+    position: absolute;
+}
+#simbol{
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    display: inline;
+}
+#logo{
+    width: 150px;
+    height: 100px;
+    color: white;
+    text-align: left;
+    line-height: 70px;
+    top: 15%;
+    padding-left: 150px;
+    font-size: 30px;
+    font-family: 'HarryPoterFont';
+    flex-basis: 200px;
+    display: inline;
+    position: absolute;
+    z-index: 2;
+}
+#logo a{
+    color: white;
+    width: 150px;
+    height: 100px;
+    font-size: 36px;
+}
+header ul{
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header li{
+    width: 200px;
+    height: 60px;
+    color: white;
+    list-style: none;
+    margin: 20px 50px 20px 50px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    font-family: 'HarryPoterFont';
+}
+header li a{
+    color: white;
+}
+#menu{
+    width: 1300px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+    padding-left: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#menu input{
+    border: 1px solid rgb(36, 36, 36);
+    margin-left: 100px;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px #2f2f2fbf;
+    color: gold;
+    font-size: 20px;
+    font-family: 'HarryPoterFont';
+    border-radius: 30px;
+}
+#menu button{
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#menu button>i{
+    font-size: 30px;
+    color: gold;
+}
+/* Footer 시작 */
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: relative;
+}
+.footer-icon{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon>a{
+    margin: 20px 50px;
+}
+footer a img{
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/main_Contents_Background_IMG.jpg);
+    background-position: center;
+    background-color: gold;
+    background-blend-mode: multiply;
+    border-radius: 20%;
+}
+.mid{
+    width: 100%;
+    height: calc(100% - 180px);
+    background-image: url(../image/반짝반짝.gif);
+}
+
+/* menu 애니메이션 시작 */
+#menu a:hover {
+    color: #ffd700;
+}
+/* menu 애니메이션 끝 */
+/* 페이지 로딩 시 fadein 시작 */
+* {
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0.1;
+    }
+    to {
+        opacity:1;
+    }
+}
+/* 페이지 로딩 시 fadein 끝 */
+
+/* 필수 css 끝 Header+Footer+mid 크기 */
+
+body{
+    font-family: 'HarryPoterFont';
+}
+.mid{
+    position: relative;
+    background-color: black;
+}
+.midContainer{
+    width: 1650px;
+    height: calc(100vh - 200px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.clubContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.club{
+    width: 800px;
+    position: absolute;
+}
+
+/* box1 css */
+.box1{
+    height: calc(100vh - 200px);
+    background-image: url(../image/main_Contents_Background_IMG.jpg);
+    border: 2px solid gold;
+    border-radius: 3%;
+    margin-right: 20px;
+}
+.clubBox1Div1{
+    width: 800px;
+    height: 50%;
+    border-radius: 3%;
+    position: absolute;
+}
+.club_box1_Imgs{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: relative;
+}
+.club_box1_Imgs img{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: absolute;
+    z-index: 100;
+}
+.clubBox1Div2{
+    width: 800px;
+    height: 50%;
+    border-radius: 3%;
+    position: absolute;
+    top: 50%;
+    position: relative;
+}
+.clubBox1Div2Sub{
+    position: absolute;
+    width: 80%;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* box2 css */
+.box2{
+    height: calc((100vh - 240px) / 2);
+    background-image: url(../image/login_Backgroud_Img.png);
+    border: 2px solid gold;
+    border-radius: 3%;
+    left: 850px;
+    position: relative;
+}
+.clubBox2Div1{
+    width: 800px;
+    height: 50%;
+    border-radius: 3%;
+    position: absolute;
+}
+.club_box2_Imgs{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: relative;
+}
+.club_box2_Imgs img{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: absolute;
+}
+.clubBox2Div2{
+    width: 800px;
+    height: 50%;
+    border-radius: 3%;
+    background-image: url(../image/login_Backgroud_Img.png);
+    position: absolute;
+    top: 50%;
+    position: relative;
+}
+.clubBox2Div2Sub{
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    border-radius: 3%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* box3 css */
+.box3{
+    height: calc((100vh - 240px) / 2);
+    border-radius: 3%;
+    border: 2px solid gold;
+    background-image: url(../image/grass-with-dew.jpeg);
+    left: 850px;
+    top: calc((100vh - 180px) / 2);
+}
+.clubBox3Div1{
+    width: 800px;
+    height: 50%;
+    border-radius: 3%;
+    position: absolute;
+}
+.club_box3_Imgs{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: relative;
+}
+.club_box3_Imgs img{
+    width: 800px;
+    height: 100%;
+    border-radius: 3%;
+    position: absolute;
+}
+.clubBox3Div2{
+    width: 800px;
+    height: 50%;
+    background-image: url(../image/grass-with-dew.jpeg);
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 3%;
+    position: absolute;
+    top: 50%;
+    position: relative;
+}
+.clubBox3Div2Sub{
+    position: absolute;
+    border-radius: 3%;
+    width: 80%;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 공통 text css */
+.title{
+    margin: 20px;
+}
+.title span{
+    font-size: 40px;
+}
+.text span{
+    font-size: 20px;
+}
+.astronmyText{
+    color: white;
+}
+.slugAndBugsText{
+    color: white;
+    text-shadow: 5px 5px 4px rgb(90, 90, 90);
+}
+
+/* text 애니메이션 시작 */
+@keyframes bounce {
+100% {
+    top: -5px;
+    text-shadow: 0 1px 0 #ccc,
+            0 1px 0 #ccc,
+            0 1x 0 #ccc,
+            0 1px 0 #ccc,
+            0 1px 0 #ccc,
+            0 1px 0 transparent,
+            0 1px 0 transparent,
+            0 30px 10px rgba(0,0,0,0.4);
+    }
+}
+
+.quidditchTitle span {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 wheat, 
+        0 1px 0 rgb(101, 25, 25), 
+        0 1px 0 black,  
+        0 1px 0 black, 
+        0 1px 0 transparent, 
+        0 1px 0 transparent,
+        0 1px 0 transparent,
+        0 10px 10px rgba(0,0,0,0.4);
+    animation: bounce 0.6s ease infinite alternate;
+}
+.quidditchTitle span:nth-child(1){animation-delay: 0.2s;}
+.quidditchTitle span:nth-child(2){animation-delay: 0.4s;}
+.quidditchTitle span:nth-child(3){animation-delay: 0.6s;}
+.quidditchTitle span:nth-child(4){animation-delay: 0.8s;}
+.quidditchTitle span:nth-child(5){animation-delay: 1s;}
+.quidditchTitle span:nth-child(6){animation-delay: 1.2s;}
+.quidditchTitle span:nth-child(7){animation-delay: 1.4s;}
+.quidditchTitle span:nth-child(8){animation-delay: 1.6s;}
+.quidditchTitle span:nth-child(9){animation-delay: 1.8s;}
+.quidditchTitle span:nth-child(10){animation-delay: 2s;}
+.quidditchTitle span:nth-child(11){animation-delay: 2.2s;}
+.quidditchTitle span:nth-child(12){animation-delay: 2.4s;}
+.quidditchTitle span:nth-child(13){animation-delay: 2.6s;}
+.quidditchTitle span:nth-child(14){animation-delay: 2.8s;}
+.quidditchTitle span:nth-child(15){animation-delay: 3s;}
+.quidditchTitle span:nth-child(16){animation-delay: 3.2s;}
+
+.quidditchTitle h2:hover{
+    animation-play-state :  paused;
+}
+
+.astronmyTitle span {
+    position: relative;
+    top: 5px;
+    color: white;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 black, 
+        0 1px 0 rgb(101, 25, 25), 
+        0 1px 0 black,  
+        0 1px 0 black, 
+        0 1px 0 transparent, 
+        0 1px 0 transparent,
+        0 1px 0 transparent,
+        0 10px 10px rgba(255,255,255,0.4);
+    animation: bounce 0.6s ease infinite alternate;
+}
+.astronmyTitle span:nth-child(1){animation-delay: 0.2s;}
+.astronmyTitle span:nth-child(2){animation-delay: 0.4s;}
+.astronmyTitle span:nth-child(3){animation-delay: 0.6s;}
+.astronmyTitle span:nth-child(4){animation-delay: 0.8s;}
+.astronmyTitle span:nth-child(5){animation-delay: 1s;}
+.astronmyTitle span:nth-child(6){animation-delay: 1.2s;}
+.astronmyTitle span:nth-child(7){animation-delay: 1.4s;}
+.astronmyTitle span:nth-child(8){animation-delay: 1.6s;}
+.astronmyTitle span:nth-child(9){animation-delay: 1.8s;}
+.astronmyTitle span:nth-child(10){animation-delay: 2s;}
+.astronmyTitle span:nth-child(11){animation-delay: 2.2s;}
+.astronmyTitle span:nth-child(12){animation-delay: 2.4s;}
+.astronmyTitle span:nth-child(13){animation-delay: 2.6s;}
+.astronmyTitle span:nth-child(14){animation-delay: 2.8s;}
+.astronmyTitle span:nth-child(15){animation-delay: 3s;}
+.astronmyTitle span:nth-child(16){animation-delay: 3.2s;}
+
+.astronmyTitle h2:hover{
+    animation-play-state :  paused;
+}
+
+.slugAndBugsTitle span {
+    position: relative;
+    top: 5px;
+    color: white;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 black, 
+        0 1px 0 rgb(101, 25, 25), 
+        0 1px 0 black,  
+        0 1px 0 black, 
+        0 1px 0 transparent, 
+        0 1px 0 transparent,
+        0 1px 0 transparent,
+        0 10px 10px rgba(255,255,255,0.4);
+    animation: bounce 0.6s ease infinite alternate;
+}
+.slugAndBugsTitle span:nth-child(1){animation-delay: 0.2s;}
+.slugAndBugsTitle span:nth-child(2){animation-delay: 0.4s;}
+.slugAndBugsTitle span:nth-child(3){animation-delay: 0.6s;}
+.slugAndBugsTitle span:nth-child(4){animation-delay: 0.8s;}
+.slugAndBugsTitle span:nth-child(5){animation-delay: 1s;}
+.slugAndBugsTitle span:nth-child(6){animation-delay: 1.2s;}
+.slugAndBugsTitle span:nth-child(7){animation-delay: 1.4s;}
+.slugAndBugsTitle span:nth-child(8){animation-delay: 1.6s;}
+.slugAndBugsTitle span:nth-child(9){animation-delay: 1.8s;}
+.slugAndBugsTitle span:nth-child(10){animation-delay: 2s;}
+.slugAndBugsTitle span:nth-child(11){animation-delay: 2.2s;}
+.slugAndBugsTitle span:nth-child(12){animation-delay: 2.4s;}
+.slugAndBugsTitle span:nth-child(13){animation-delay: 2.6s;}
+.slugAndBugsTitle span:nth-child(14){animation-delay: 2.8s;}
+.slugAndBugsTitle span:nth-child(15){animation-delay: 3s;}
+.slugAndBugsTitle span:nth-child(16){animation-delay: 3.2s;}
+
+.slugAndBugsTitle h2:hover{
+    animation-play-state :  paused;
+}
+/* text 애니메이션 끝 */

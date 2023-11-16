@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit; /* 부모로 부터 상속*/
+    text-decoration: none;
+}
+.main{
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    background-image: url(../image/old_paper.jpg);
+    color: rgb(99, 11, 11);
+    text-shadow: 0 3px 5px rgb(55, 5, 5);
+}
+.content-header1 h1{
+    text-shadow: -1px 0 rgb(101, 25, 25), 0 1px black, 1px 0 rgb(101, 25, 25), 0 -1px whitesmoke;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'HarryPoterFont';
+}
+.content-write{
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(51, 10, 10);
+    text-shadow: 1px 1px 1px rgba(55, 5, 5, 0.603);
+}
+.content-write input, textarea{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    /* background-color: rgba(224, 224, 224, 0.658); */
+    box-shadow: inset 3px 3px 20px rgba(74, 74, 74, 0.435);
+}
+input, textarea:focus {
+    outline: none;
+}
+.content-write .info input[type="text"]{
+    background-color: rgba(224, 224, 224, 0.658);
+    width: 25%;
+    margin-right: 50px;
+}
+.content-write .info input[type="password"]{
+    background-color: rgba(224, 224, 224, 0.658);
+    width: 31%;
+}
+.content-write .title-write input[type="text"]{
+    background-color: rgba(224, 224, 224, 0.658);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 85.5%;
+}
+.content-write .msg-write textarea {
+    background-color: rgba(224, 224, 224, 0.658);
+    min-width: 85.5%;
+    max-width: 85.5%;
+    min-height: 200px;
+    max-height: 200px;
+    /* vertical-align : 텍스트를 수직,수평 정렬 */
+    vertical-align: top;
+    margin-top: 10px;
+}
+.content-write input[type="file"]{
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    margin-left: 40px;
+
+}
+.upload-btn{
+    position: absolute;
+    align-items: center;
+    bottom: 50px;
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+}
+.upload-btn a{
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    font-weight: 700;
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+}

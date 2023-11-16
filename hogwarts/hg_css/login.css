@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'HarryPoterFont';
+    src: url('../font/HarryPoter-na_lover.ttf') format('truetype');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../image/login_Backgroud_Img.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* 로그인  */
+.container{
+    width: 600px;
+    height: 800px;
+    background-image: url(../image/main_Contents_Background_IMG.jpg);
+    background-color: rgba(140, 81, 46, 0.428);
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.70), 0 15px 12px rgba(0,0,0,0.5);
+    border: 2px solid rgb(101, 25, 25);
+    /* 화면의 정중앙에 위치 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.loginDiv{
+    width: 400px;
+    height: 500px;
+    border-radius: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+.loginInnerDiv{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-field{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'HarryPoterFont';
+    /* background-color: rgba(64, 17, 7, 0.7); */
+    background-color: rgba(255, 231, 187, 0.55);
+    border: 1px solid rgb(101, 25, 25);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.70), 0 5px 5px rgba(0,0,0,0.5);
+    top: 40%;
+}
+.text-field-Btn{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'HarryPoterFont';
+    color: white;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.70), 0 5px 5px rgba(0,0,0,0.5);
+    top: 40%;
+}
+.link{
+    width: 100px;
+    height: 40px;
+    margin: 25px;
+    background-color: rgb(101, 25, 25);
+    border-radius: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.70), 0 5px 5px rgba(0,0,0,0.5);
+    top: 40%;
+}
+.link>a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: 'HarryPoterFont';
+    text-align: center;
+}
+
+/* 로고 이미지 조정 */
+.loginLogo img{
+    width: 250px;
+    height: 300px;
+
+}
+.loginLogo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    filter: brightness(0.8);
+}
+
+/* 페이지 로딩 시 fade */
+body {
+animation: fadein 4s;
+}
+@keyframes fadein {
+from {
+    opacity:0.1;
+    background-color: black;
+}
+to {
+    opacity:1;
+    background-color: transparent;
+}
+}

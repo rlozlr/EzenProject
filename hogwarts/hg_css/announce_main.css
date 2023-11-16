@@ -1,0 +1,157 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit; /* 부모로 부터 상속*/
+    text-decoration: none;
+}
+.main{
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    background-image: url(../image/old_paper.jpg);
+    color: rgb(99, 11, 11);
+    text-shadow: 0 3px 5px rgb(55, 5, 5);
+}
+.main div, ul, input {
+    overflow: hidden;
+}
+.content-header{
+    width: 85%;
+    padding:10px;
+    text-align: left;
+}
+.content-header h1{
+    text-shadow: -1px 0 rgb(101, 25, 25), 0 1px black, 1px 0 rgb(101, 25, 25), 0 -1px whitesmoke;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'HarryPoterFont';
+}
+.search-box{
+    width: 85%;
+    padding:20px;
+    text-align: right;
+}
+.search-box input[type="search"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #59595975;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+}
+
+.search-box a.search{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    font-weight: 700;
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+}
+.content-body{
+    width: 85%;
+    padding:20px;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0 2px 1px rgba(55, 5, 5, 0.603);
+}
+.content-body div{
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(101, 25, 25);
+}
+.content-box{
+    box-shadow: 0 2px 1px rgba(39, 2, 2, 0.695);
+}
+.content-body div div{
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    border: none;
+}
+
+.content-body .check .delete{
+    width: 5%;
+}
+
+.content-body .title{
+    width: 70%;
+    text-align: left;
+}
+
+.number {
+    margin: 30px;
+}
+
+.number li{
+    display: inline-block;
+}
+
+.number li a{
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 20px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+}
+
+.number li a.active {
+    background-color: rgba(113, 57, 20, 0.825);
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    margin: 100px 135px;
+}
+
+.btn a{
+    padding: 10px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    font-weight: 700;
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+    border-radius: 10px;
+}
+.delete > .xBtn{
+    padding: 5px 10px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    font-weight: 700;
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+    border-radius: 10px;
+}
+
+.title:hover {
+    animation: bounce 1s infinite; /* 호버 시 애니메이션 속성 설정 */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

@@ -1,0 +1,69 @@
+.number {
+    text-align: center;
+}
+
+.number {
+    margin: 30px;
+}
+
+.number li{
+    display: inline-block;
+}
+
+.number li a{
+    font-weight: 700;
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 3px;
+    margin-top: 20px;
+    background-color: rgba(113, 57, 20, 0.481);
+    color: rgb(51, 10, 10);
+    box-shadow: 2px 2px 4px rgba(44, 20, 5, 0.557);
+}
+
+.number li a.active {
+    background-color: rgba(113, 57, 20, 0.825);
+}
+
+.content-body{
+    width: 85%;
+    padding:20px;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0 2px 1px rgba(55, 5, 5, 0.603);
+}
+.content-body div{
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(101, 25, 25);
+}
+.content-box{
+    box-shadow: 0 2px 1px rgba(39, 2, 2, 0.695);
+}
+.content-body div div{
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    border: none;
+}
+.content-body .check .delete{
+    width: 5%;
+}
+
+.content-body .title{
+    width: 70%;
+    text-align: left;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit; /* 부모로 부터 상속*/
+    text-decoration: none;
+}

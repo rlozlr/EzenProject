@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit; /* 부모로 부터 상속*/
+    text-decoration: none;
+}
+.main{
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    background-image: url(../image/old_paper.jpg);
+    color: rgb(99, 11, 11);
+}
+.contains-left{
+    width: 40vw;
+    height: 100vh;
+    
+}
+.contains-right{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.contains-right-main1{
+    height: 55vh;
+}
+.contains-right-main2{
+    height: 45vh;
+}
