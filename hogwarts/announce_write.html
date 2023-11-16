@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="hg_css/announce_write.css">
+    <link rel="stylesheet" type="text/css" href="hg_css/common.css">
+    <title>Announce Writting</title>
+</head>
+<body>
+    <header>
+        <div id="homeLogo"><img src="image/hogwartSimbol.png" alt="hogwartSimbol" id="simbol"></div>
+        <div id="logo"><a href="home.html">Hogwarts</a></div>
+        <div id="menu">
+            <ul>
+                <li><a href="principal.html">SCHOOL</a></li>
+                <li><a href="House.html">DORMITORY</a></li>
+                <li><a href="club.html">CLUB</a></li>
+                <li><a href="announce_main.html">NOTICE</a></li>
+            </ul>
+            <input type="text"><button><i class="bi bi-search"></i></button>
+        </div>
+    </header>
+    <div class="mid">
+        <!-- 사이드 메뉴 -->
+        <section class="side-menu" id="side-menu">
+            <ul class="a-ul"><h1>NOTICE</h1>
+                <hr>
+                <li class="a-li"><a href="announce_main.html">Announcement</a></li>
+                <li class="a-li"><a href="hogwarts_news.html">Hogwarts News</a></li>
+            </ul>
+        </section>
+        <!-- 게시글 작성 화면 -->
+        <main class="main">
+            <div class="content-header1">
+                <h1><a href="announce_main.html">Announcement</a></h1>
+            </div>
+            <div class="content-write">
+                <div class="info">
+                    이름 <input type="text" id="userName">
+                    비밀번호 <input type="password" id="userPwd">
+                </div>
+                <div class="title-write">
+                    제목 <input type="text" id="title">
+                </div>
+                <div class="msg-write">
+                     내용 <textarea id="content" placeholder="이곳에 내용을 입력하세요..."></textarea>
+                    <input type="file" class="file">
+                </div>
+            </div>
+            <div class="upload-btn" onclick="updateMsg()"><a href="announce_2nd.html">Submit</a></div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-icon">
+            <a href="club.html"><img src="./image/quidditch_Icon.png" alt="squiz" id="squiz"></a>
+            <a href="club.html"><img src="./image/spider_icon.png" alt="broom" id="broom"></a>
+            <a href="club.html"><img src="./image/broomstick_Icon.png" alt="head" id="head"></a>
+        </div>
+    </footer>
+    <script src="announce_write.js"></script>
+</body>
+</html>

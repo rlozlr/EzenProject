@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Main</title>
+    <style>
+        @import url(hg_css/common.css);
+    </style>
+</head>
+<body>
+    <!-- 필수 Header 영역 -->
+    <header>
+        <div id="homeLogo"><img src="image/hogwartSimbol.png" alt="hogwartSimbol" id="simbol"></div>
+        <div id="logo"><a href="/home.html">Hogwarts</a></div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">SCHOOL</a></li>
+                <li><a href="#">DORMITORY</a></li>
+                <li><a href="/club.html">CLUB</a></li>
+                <li><a href="#">NOTICE</a></li>
+            </ul>
+            <input type="text"><button><i class="bi bi-search"></i></button>
+        </div>
+    </header>
+    <!-- 필수 Header 끝 -->
+    <!-- 변경 영역 시작 -->
+    <section class="mid">
+        
+    </section>
+    <!-- 변경 영역 끝 -->
+    <!-- 필수 Footer 시작 -->
+    <footer>
+        <a href="club.html"><img src="./image/quidditch_Icon.png" alt="squiz" id="squiz"></a>
+        <a href="club.html"><img src="./image/spider_icon.png" alt="broom" id="broom"></a>
+        <a href="club.html"><img src="./image/broomstick_Icon.png" alt="head" id="head"></a>
+    </footer>
+    <audio loop autoplay>
+      <source src="/sound/Harry-Potter-Theme.mp3" type="audio/mp3">
+    </audio>
+    <!-- 필수 Footer 끝 -->
+</body>
+</html>
+<!-- 공통 스크립트 시작 -->
+<script>
+    // 'Hogwarts' 로고 클릭 시 home.html로 이동
+    document.getElementById("logo").addEventListener('click', function() {
+        console.log("Logo Clicked!"); // 디버깅을 위한 로그
+        window.location.href = "/home.html";
+    });
+
+    // 'homeLogo' 이미지 클릭 시 home.html로 이동
+    document.getElementById("homeLogo").addEventListener('click', function() {
+        console.log("Home Logo Clicked!"); // 디버깅을 위한 로그
+        window.location.href = "/home.html";
+    });
+</script>
+<!-- 공통 스크립트 끝 -->

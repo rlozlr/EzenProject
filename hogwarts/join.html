@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hg_css/join.css">
+    <title>Join</title>
+</head>
+<body>
+    <div class="container">
+        <div class="joinDiv">
+            <div class="joinInnerDiv">
+                <div class="joinPageLogo"><img src="./image/join_Logo.png" alt="joinLogo"></div>
+                <div class="joinPage">
+                    <div class="name">
+                        <input id="name"  type="text" placeholder="Name">
+                        <div id="nameError" class="error"></div>
+                    </div>
+                    <div class="password">
+                        <input id="password" type="password" placeholder="Password">
+                        <div id="passwordError" class="error"></div>
+                    </div>
+                    <div class="passwordCheck">
+                        <input id="passwordCheck" type="password" placeholder="Checked Password">
+                        <div id="passwordCheckError" class="error"></div>
+                    </div>
+                    <div class="chlid">
+                        <input type="radio" id="student" name="shop" checked /><label for="student">Student</label>
+                        <input type="radio" id="professor" name="shop" checked /><label for="professor">Professor</label>
+                        <div id="chlidError" class="error"></div>
+                    </div>
+                    <div class="area">
+                        <select id="area">
+                            <option selected disabled>Choose Dormitory</option>
+                            <option>Grtffindor</option>
+                            <option>Hufflepuff</option>
+                            <option>Ravenclaw</option>
+                            <option>Slytherin</option>
+                        </select>
+                        <div id="areaError" class="error"></div>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="gender_man" name="gender" checked /><label for="gender_man">Man</label>
+                        <input type="radio" id="gender_woman" name="gender" checked /><label for="gender_woman">Woman</label>
+                    </div>
+                </div>
+                <div class="link">
+                    <button type="button" id="signUpButton" onclick="signUpCheck()">Complete</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay>
+        <source src="./sound/train.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
+<script src="join.js"></script>
